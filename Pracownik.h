@@ -15,7 +15,8 @@ public:
 	}
 };
 
-struct Nazwa {
+class Nazwa {
+public:
 	Pracownik pracownik;
 	int wiek;
 	string stanowisko;
