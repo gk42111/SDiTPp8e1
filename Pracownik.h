@@ -2,27 +2,25 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-class Pracownik
+using namespace std;
+class Nazwa
 {
 public:
-
 	string imie;
 	string nazwisko;
 	string pesel;
 	void print() {
-		cout << "\n" << imie << "\n" << nazwisko<<"\n" << pesel << endl;
+		cout << imie << "\n" << nazwisko << "\n" << pesel << endl;
 	}
 };
 
-class Nazwa {
+class Pracownik {
 public:
-	Pracownik pracownik;
+	Nazwa agregat;
 	int wiek;
 	string stanowisko;
 	void print() {
-		pracownik.print();
-		cout << wiek << "\n" << stanowisko << endl;
+		agregat.print();
+		cout << wiek << "\n" << stanowisko << "\n"<< endl;
 	}
 };
-
